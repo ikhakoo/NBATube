@@ -1,4 +1,4 @@
-class Tube < ActiveRecord::Base
+	class Tube < ActiveRecord::Base
 
 	def youtube_id
 		if url =~ /https?:\/\/(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.be\/)(.+)/
