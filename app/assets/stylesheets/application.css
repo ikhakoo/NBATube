@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+header {
+	font-size: 24px;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+body {
+    background-image: url("concrete_seamless.png");
+}
