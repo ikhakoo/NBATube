@@ -19,6 +19,26 @@ class TubesController < ApplicationController
     end
   end
 
+  def edit
+    @tube = Tube.find(params[:id])
+  end
+
+  def update
+    @tube = Tube.find(params[:id])
+
+    if @tube.update_attributes(tube_params)
+      redirect_to "/tubes"
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @tube = Tube.find(params[:id])
+    @tube.destroy
+    redirect_to tubes_url
+  end
+
   private
   def tube_params
     params.require(:tube).permit(:source, :title, :url)

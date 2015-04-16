@@ -4,4 +4,5 @@
 <% @tubes.each do |tube| %>
   <p><%= tube.source %>, <%= tube.title %></p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= tube.youtube_id %>" frameborder="0" allowfullscreen></iframe>
-<% end %>
+  <%= link_to "Edit", edit_tube_path(tube) %>
+<% end %>	
