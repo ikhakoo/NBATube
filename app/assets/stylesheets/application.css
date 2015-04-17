@@ -19,8 +19,14 @@ header {
 
 h1 {
 	font-size: 20px;
+	color: #3399FF;
+}
+
+p {
+	font-size: 16px;
+	color: #000333;
 }
 
 body {
-    background-image: url("concrete_seamless.png");
+    background-image: url("bg.jpg");
 }

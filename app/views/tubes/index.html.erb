@@ -1,5 +1,4 @@
 <h1>Currently Sharing <%= @tubes.length %> videos</h1>
-<%= link_to "New Video", "/tubes/new" %>
 
 <% @tubes.each do |tube| %>
   <p><%= tube.source %>, <%= tube.title %></p>
