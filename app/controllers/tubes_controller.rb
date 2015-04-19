@@ -1,7 +1,11 @@
 class TubesController < ApplicationController
 	def index
-		@tubes = Tube.all
+
 	end
+
+  def show
+    @tubes = Tube.all
+  end
 
 	def new
     @tube = Tube.new
