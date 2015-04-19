@@ -2,6 +2,6 @@
 
 <% @tubes.each do |tube| %>
   <p>Source: <%= tube.source %>, Title: <%= tube.title %></p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= tube.youtube_id %>" frameborder="0" allowfullscreen></iframe>
-  <p><%= link_to "Edit", edit_tube_path(tube) %> | <%= link_to "Delete", (tube), method: :delete, data: {confirm: "Are you sure you want to delete this video?"}  %></p>
+  <div class="youtube"><iframe width="400" height="400" src="https://www.youtube.com/embed/<%= tube.youtube_id %>" frameborder="0" allowfullscreen></iframe>
+<p><%= link_to "Edit", edit_tube_path(tube) %> | <%= link_to "Delete", (tube), method: :delete, data: {confirm: "Are you sure you want to delete this video?"}  %></p> </div>
 <% end %>	
